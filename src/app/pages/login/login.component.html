@@ -1,0 +1,15 @@
+<div class="area-login-background"></div>
+
+
+<div class="area-form">
+  <form>
+    <h1 class="titulo">C.R.U.D User</h1>
+    <h2 class="subtitulo">Gerencie seus usuários</h2>
+
+    <input [(ngModel)]="userName" [ngModelOptions]="{standalone:true} " class="input-form" type="text" placeholder="Digite seu nome">
+
+    <app-button size="100" textButton="Acessar" (click)="login()"></app-button>
+  </form>
+
+  <p class="footer">© 2026 | Desenvolvido por Guilherme Rocha</p>
+</div>

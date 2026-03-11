@@ -1,0 +1,133 @@
+<app-menu></app-menu>
+
+<div class="container-fluid pt-3">
+  <div class="row">
+
+    <!-- ===================== -->
+    <!-- COLUNA ESQUERDA (9)   -->
+    <!-- ===================== -->
+    <div class="col-12 col-lg-9">
+
+      <!-- Card principal -->
+      <div class="card-info">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <h1 class="titulo">C.R.U.D Users</h1>
+            <h3 class="subtitulo">
+              Gerencie seus <span>usuários</span> de forma <span>simples</span> e <span>eficiente</span>
+              aproveite as funcionalidades para <span>criar</span>, <span>ler</span>,
+              <span>atualizar</span> e <span>excluir</span> seus usuários com facilidade.<br>
+              Confira o resumo das informações em nosso <span>Dashboard</span>.
+            </h3>
+
+            <app-button textButton="Iniciar" routerLink="/usuarios"></app-button>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <img src="../../../assets/IMG/dashboard.png" width="100%" alt="dashboard">
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== -->
+      <!-- Cards inferiores      -->
+      <!-- ===================== -->
+      <div class="row mt-4">
+
+        <!-- Card Esquerda -->
+        <div class="col-12 col-md-6">
+          <div class="card-info">
+            <div class="row">
+              <div class="col-8">
+                <p class="texto-card">Total de usuários cadastrados</p>
+                <p class="numero-card">20</p>
+                <p class="destaque-card">+ 5 adicionados no último mês</p>
+              </div>
+              <div class="col-4 text-center">
+                <mat-progress-spinner
+                  class="example-margin color-spinner"
+                  mode="determinate"
+                  value="80">
+                </mat-progress-spinner>
+                <p class="info-spinner">20/40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Direita -->
+        <div class="col-12 col-md-6">
+          <div class="card-info">
+            <div class="row">
+              <div class="col-8">
+                <p class="texto-card">Total benefícios cadastrados</p>
+                <p class="numero-card">4</p>
+                <p class="destaque-card">+ 2 adicionados no último mês</p>
+              </div>
+              <div class="col-4 text-center">
+                <mat-progress-spinner
+                  class="example-margin color-spinner"
+                  mode="determinate"
+                  value="90">
+                </mat-progress-spinner>
+                <p class="info-spinner">4/5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Abaixo -->
+        <div class="col-12 mt-4">
+          <div class="card-info">
+            <h3 class="titulo">Último usuário cadastrado</h3>
+            <hr class="hr">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <mat-icon>account_circle</mat-icon>
+              </div>
+              <div class="col-auto">
+                <p class="text-p mb-0">1</p>
+              </div>
+              <div class="col">
+                <p class="text-p mb-0">Guilherme</p>
+              </div>
+              <div class="col">
+                <p class="text-p mb-0">Desenvolvedor Front-End Júnior</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- COLUNA DIREITA (3)    -->
+    <!-- ===================== -->
+    <div class="col-12 col-lg-3">
+      <div class="card-info">
+        <div class="container-perfil text-center">
+          <img src="../../../assets/IMG/user-profile-icon-anonymous-person-symbol-blank-avatar-graphic-vector-illustration.webp" class="img-perfil mb-3" width="90px">
+          <h4>Seja bem vindo</h4>
+          <h5>{{userName}}</h5>
+          <li> <mat-icon>location_on</mat-icon> RJ - Brasil </li>
+        </div>
+
+        <hr class="hr">
+        <p class="text-p">"Meu nome é Guilherme Rocha,
+           0 e sou desenvolvedor front-end com foco em Angular, tecnologia que venho estudando e aplicando em projetos há 1 ano e 4 meses. Busco minha primeira oportunidade como Desenvolvedor Júnior em Angular para evoluir tecnicamente e ganhar mais experiência em um ambiente profissional estruturado.
+
+        Atuei como estagiário na TECAL Engenharia, trabalhando com React e Next.js no front-end e Java no back-end, participando do desenvolvimento e manutenção de sistemas.
+
+        Atualmente também desenvolvo projetos freelancers para duas empresas, criando e mantendo soluções web, o que tem fortalecido minha responsabilidade, organização e experiência prática com clientes e demandas reais."</p>
+        <hr class="hr">
+
+        <li> <mat-icon>person</mat-icon> Gerencie usuarios</li>
+        <li> <mat-icon>loyalty</mat-icon> Adicione Beneficios</li>
+        <li> <mat-icon>format_list_bulleted</mat-icon> Consulte Cadastros</li>
+        <li> <mat-icon>delete</mat-icon> Exclua usuarios</li>
+      </div>
+    </div>
+
+  </div>
+</div>
