@@ -1,27 +1,42 @@
-# CrudUsers
+# Projeto desenvolvido com Angular 17 e Firebase, com o objetivo de demonstrar a implementação de um CRUD simples de usuários integrado a um banco de dados em nuvem.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+## Sobre o Projeto
 
-## Development server
+Este projeto consiste em uma aplicação web simples que permite realizar o gerenciamento de usuários e seus benefícios. A aplicação utiliza o Firebase como banco de dados, permitindo armazenar e manipular dados em tempo real.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O objetivo principal foi praticar a integração do Angular com serviços externos e a construção de operações básicas de CRUD.
 
-## Code scaffolding
+## 🚀 Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular 17
 
-## Build
+TypeScript
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Firebase
 
-## Running unit tests
+HTML5
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+SCSS
 
-## Running end-to-end tests
+Bootstrap
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## ⚙️ Funcionalidades
 
-## Further help
+A aplicação permite realizar as seguintes operações:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Criar novos usuários
+
+Listar usuários cadastrados
+
+Atualizar informações dos usuários
+
+Excluir usuários
+
+Associar benefícios aos usuários
+
+## 🗄️ Banco de Dados
+
+O projeto utiliza o Firebase para armazenamento dos dados.
+Os dados são armazenados em coleções, facilitando a manipulação das informações através do Angular.
+
+### Desenvolvido por Guilherme Rocha
