@@ -6,17 +6,24 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { LoginComponent } from './pages/login/login.component';
 import { ButtonComponent } from './components/button/button.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { UsuariosComponent } from './pages/usuarios/usuarios.component';
-import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { CrudComponent } from './pages/crud/crud.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from "@angular/material/paginator";
+import {  MatSortModule  } from '@angular/material/sort';
+import { ModalViewUserComponent } from './pages/crud/modal-view-user/modal-view-user.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ModalFormUserComponent } from './pages/crud/modal-form-user/modal-form-user.component';
+import { MatSelectModule } from '@angular/material/select'
 
 
 @NgModule({
@@ -26,8 +33,9 @@ import { CrudComponent } from './pages/crud/crud.component';
     ButtonComponent,
     HomeComponent,
     MenuComponent,
-    UsuariosComponent,
-    CrudComponent
+    CrudComponent,
+    ModalViewUserComponent,
+    ModalFormUserComponent
   ],
   imports: [
     BrowserModule,
@@ -36,8 +44,14 @@ import { CrudComponent } from './pages/crud/crud.component';
     MatIconModule,
     MatProgressSpinnerModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-
-  ],
+    MatFormFieldModule,
+    MatInputModule, MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+],
   providers: [
     provideAnimationsAsync(),
   ],

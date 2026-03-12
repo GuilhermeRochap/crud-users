@@ -1,0 +1,37 @@
+<div class="container-fluid p-3">
+  <mat-icon class="float-end hover" (click)="closeModal()">close</mat-icon>
+
+
+  <h1 class="titulo">Detalhes do usuário</h1>
+  <h2 class="subtitulo">Veja as informações do usuário</h2>
+
+
+  <div class="row mt-3">
+    <div class="col-6">
+      <h4 class="titulo-info">Nome</h4>
+      <p class="info">{{ userData.name }}</p>
+    </div>
+    <div class="col-6">
+      <h4 class="titulo-info">E-mail</h4>
+      <p class="info">{{ userData.email }}</p>
+    </div>
+    <div class="col-6">
+      <h4 class="titulo-info">Setor</h4>
+      <p class="info">{{ userData.sector }}</p>
+    </div>
+    <div class="col-6">
+      <h4 class="titulo-info">Função</h4>
+      <p class="info">{{ userData.role }}</p>
+    </div>
+    <div class="col-6">
+      <h4 class="titulo-info">Plano de Saúde</h4>
+      <p class="info" *ngIf="userData.healthPlan">{{ userData.healthPlan }}</p>
+      <p class="info" *ngIf="!userData.healthPlan">Não possui</p>
+    </div>
+    <div class="col-6">
+      <h4 class="titulo-info">Plano Odontológico</h4>
+      <p class="info" *ngIf="userData.dentalPlan">{{ userData.dentalPlan }}</p>
+      <p class="info" *ngIf="!userData.dentalPlan">Não possui</p>
+    </div>
+  </div>
+</div>
