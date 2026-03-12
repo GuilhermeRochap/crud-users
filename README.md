@@ -40,7 +40,7 @@ O projeto utiliza o Firebase para armazenamento dos dados.
 Os dados são armazenados em coleções, facilitando a manipulação das informações através do Angular.
 
 <p align="center">
-  <img src="../assets/IMG/print1.png" width="900"/>
+  <img src="../../assets/IMG/print1.png" width="900"/>
 </p>
 
 ### Desenvolvido por Guilherme Rocha
