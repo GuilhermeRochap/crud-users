@@ -39,8 +39,6 @@ Associar benefícios aos usuários
 O projeto utiliza o Firebase para armazenamento dos dados.
 Os dados são armazenados em coleções, facilitando a manipulação das informações através do Angular.
 
-<p align="center">
-  <img src="../../assets/IMG/print1.png" width="900"/>
-</p>
+![Preview](src/assets/IMG/print1.png)
 
 ### Desenvolvido por Guilherme Rocha
